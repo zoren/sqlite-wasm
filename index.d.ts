@@ -2208,6 +2208,8 @@ declare type InitOptions = {
  */
 export default function init(opts?: InitOptions): Promise<Sqlite3Static>;
 
+export function sqlite3InitModuleNode(opts?: InitOptions): Promise<Sqlite3Static>;
+
 declare type ListLike<T> = {
   length: number;
   forEach: (cb: (val: T) => void) => void;
